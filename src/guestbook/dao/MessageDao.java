@@ -54,7 +54,7 @@ public class MessageDao {
 		ResultSet rs = null;
 		
 		try {
-			pstmt = conn.prepareStatement("SELECT * FROM guestbook_message WHERE messageId = ?");
+			pstmt = conn.prepareStatement("SELECT * FROM guestbook_message WHERE message_id = ?");
 			pstmt.setInt(1, messageId);			
 			rs = pstmt.executeQuery();
 			
